@@ -15,7 +15,12 @@ This theme recreates the vibrant, asymmetrical panels, curved lines, and retro-f
 
 ## 🖼️ Screenshots
 
-> ⚠️ *Screenshots coming soon! Feel free to contribute.*
+<details>
+  <summary>Expand</summary>
+  <br/>
+
+  <img src="./assets/Screenshot1.png" />
+</details>
 
 ## 🎨 Installation
 
