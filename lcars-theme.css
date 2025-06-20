@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'LCARS Terminal';
+  src: url('https://github.com/remixz/trekkie/raw/refs/heads/master/resources/fonts/LCARS.ttf') format('truetype') format('truetype');
+}
+
+body {
+  background-color: #000000 !important;
+  font-family: 'LCARS Terminal', 'Orbitron', 'Arial Black', sans-serif;
+  color: #FF9900 !important;
+}
+
+/* Sidebar / Panel style */
+.sidebarMainDrawer {
+  background-color: #C79AE0 !important;
+  border-radius: 0 25px 25px 0;
+  padding: 20px 0;
+  border-right: 4px solid #FFB800;
+}
+
+/* Navigation item colors */
+.navMenuOption {
+  background-color: #8DA6FF !important;
+  color: #000 !important;
+  border-radius: 20px 0 0 20px;
+  margin: 5px 0;
+}
+
+/* Header bar */
+.skinHeader {
+  background-color: #FF9900 !important;
+  color: black !important;
+  font-weight: bold;
+  font-size: 1.3em;
+  border-radius: 0 0 20px 20px;
+  border-bottom: 4px solid #BF6464;
+}
+
+/* Buttons */
+.button-flat, .raised {
+  background-color: #B299FF !important;
+  color: #000 !important;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 18px;
+  margin: 6px;
+  text-transform: uppercase;
+  border: 2px solid #FF9900;
+}
+
+.button-flat:hover {
+  background-color: #FF9900 !important;
+  color: #000 !important;
+}
+
+/* Cards / Media Blocks */
+.cardBox, .cardBox.cardContent {
+  background-color: #FFA640 !important;
+  border-radius: 30px 0 0 30px;
+  overflow: hidden;
+  border: 2px solid #FFB800;
+}
+
+.cardText {
+  color: black !important;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FF9900;
+  border-radius: 10px;
+}
+
+/* Decorative segment bars (LCARS-style) */
+.lcars-segment {
+  background-color: #FF9900;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 0 25px 25px 0;
+}
+
+.lcars-label {
+  color: #FF9900;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 0 10px 10px;
+}
+
+/* LCARS numeric-style box */
+.lcars-box {
+  background-color: #BF6464;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+/* Fix Homepage Padding */
+#homeTab {
+  margin-top: 40px !important;
+}
+
+/* Fix Homepage Buttons */
+.headerTabs .emby-button-foreground {
+  color: black !important;
+}
+
+/* Change Header Logo */
+.pageTitleWithDefaultLogo {
+  background-image: url('https://i.imgur.com/f3m7jul.png') !important;
+}
