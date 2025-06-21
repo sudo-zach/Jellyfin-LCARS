@@ -27,37 +27,39 @@ body {
 
 /* Header bar */
 .skinHeader {
-  background-color: #FF9900 !important;
   color: black !important;
   font-weight: bold;
-  font-size: 1.3em;
-  border-radius: 0 0 20px 20px;
-  border-bottom: 4px solid #BF6464;
+  font-size: 1.1em;
+  background-color: transparent !important;
 }
 
-/* Buttons */
-.button-flat, .raised {
-  background-color: #B299FF !important;
-  color: #000 !important;
-  font-weight: bold;
-  border-radius: 30px;
-  padding: 10px 18px;
-  margin: 6px;
-  text-transform: uppercase;
-  border: 2px solid #FF9900;
-}
-
-.button-flat:hover {
+.skinHeader:before {
+  content: "";
+  margin-bottom: -80px;
+  position: relative !important;
+  display: inline !important;
   background-color: #FF9900 !important;
-  color: #000 !important;
+  border-radius: 0 0 20px 20px;
+  height: 80px !important;
 }
 
 /* Cards / Media Blocks */
-.cardBox, .cardBox.cardContent {
+.cardBox,
+.cardBox.cardContent {
   background-color: #FFA640 !important;
-  border-radius: 30px 0 0 30px;
+  border-radius: 30px;
   overflow: hidden;
   border: 2px solid #FFB800;
+}
+
+.countIndicator,
+.playedIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator {
+  background-color: #FFA640 !important;
+  color: black !important;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .cardText {
@@ -72,30 +74,26 @@ body {
   width: 10px;
   background-color: #000;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #FF9900;
   border-radius: 10px;
 }
 
 /* Decorative segment bars (LCARS-style) */
-.lcars-segment {
-  background-color: #FF9900;
+.raised,
+.button-flat {
+  background-color: transparent;
   height: 30px;
+  color: #000;
   margin: 10px 0;
-  border-radius: 0 25px 25px 0;
-}
-
-.lcars-label {
-  color: #FF9900;
-  font-size: 1.5em;
   font-weight: bold;
-  margin: 20px 0 10px 10px;
 }
 
 /* LCARS numeric-style box */
-.lcars-box {
-  background-color: #BF6464;
-  color: black;
+.headerTabs.sectionTabs {
+  background-color: transparent;
+  color: white;
   font-weight: bold;
   padding: 10px;
   border-radius: 20px;
@@ -103,17 +101,40 @@ body {
   text-align: center;
 }
 
-/* Fix Homepage Padding */
-#homeTab {
-  margin-top: 40px !important;
+.emby-tab-button:hover {
+  color: #FFA640 !important;
 }
 
-/* Fix Homepage Buttons */
-.headerTabs .emby-button-foreground {
-  color: black !important;
+.headerTabs.sectionTabs {
+   font-size: 15px;
 }
 
 /* Change Header Logo */
 .pageTitleWithDefaultLogo {
-  background-image: url('https://i.imgur.com/f3m7jul.png') !important;
+  background-image: url('https://i.imgur.com/f3m7jul.png');
+  z-index: 1000;
+}
+
+/* Improved Session Username */
+.sessionUserName {
+  color: white;
+}
+
+/* Improved Card Background */
+.defaultCardBackground5 {
+  background-color: #1b1b1b;
+}
+
+/* Improved Hover Button */
+.paper-icon-button-light:hover:not(:disabled) {
+  background-color: #1b1b1b96;
+  color: white;
+}
+
+/* Remove Focus Issues */
+:focus-visible {
+  outline: 0px solid transparent !important;
+  border: 0px solid transparent !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
 }
