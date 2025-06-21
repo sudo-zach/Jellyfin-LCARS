@@ -19,7 +19,14 @@ This theme recreates the vibrant, asymmetrical panels, curved lines, and retro-f
   <summary>Expand</summary>
   <br/>
 
-  <img src="./assets/Screenshot1.png" />
+| **Collections** | **Dashboard** | **Homepage** |
+|--------------|--------------|--------------|
+| ![Collections - Screenshot](./assets/Collections.png) | ![Dashboard - Screenshot](./assets/Dashboard.png) | ![Homepage - Screenshot](./assets/Homepage.png) |
+
+| **Movies** | **Music** | **TV Shows** |
+|--------------|--------------|--------------|
+| ![Movies - Screenshot](./assets/Movies.png) | ![Music - Screenshot](./assets/Music.png) | ![TV Shows - Screenshot](./assets/TV-Shows.png) |
+
 </details>
 
 ## 🎨 Installation

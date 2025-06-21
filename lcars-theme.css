@@ -27,6 +27,49 @@ body {
   margin: 5px 0;
 }
 
+.pageTitle {
+  color: black !important;
+  z-index: 1000;
+  font-weight: bold;
+  font-family: 'Antonio';
+  font-size: 22px;
+}
+
+#songsTab,
+#albumsTab,
+#genresTab,
+#moviesTab,
+#seriesTab,
+#moviesPage,
+#artistsTab,
+#studiosTab,
+#episodesTab,
+#playlistsTab,
+#suggestionsTab,
+#albumArtistsTab {
+  margin-top: 15px;
+}
+
+.emby-scrollbuttons.padded-right {
+  z-index: 1000;
+}
+
+.btnPlay,
+.btnSort,
+.btnFilter,
+.btnShuffle,
+.btnViewSettings {
+  color: white !important;
+}
+
+.btnPlay:hover,
+.btnSort:hover,
+.btnFilter:hover,
+.btnShuffle:hover,
+.btnViewSettings:hover {
+  color: #F90 !important;
+}
+
 .sidebarHeader {
   font-size: 1.1em;
 }
