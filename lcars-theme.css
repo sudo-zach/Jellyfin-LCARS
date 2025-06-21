@@ -1,11 +1,8 @@
-@font-face {
-  font-family: 'LCARS Terminal';
-  src: url('https://github.com/remixz/trekkie/raw/refs/heads/master/resources/fonts/LCARS.ttf') format('truetype') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap');
 
 body {
   background-color: #000000 !important;
-  font-family: 'LCARS Terminal', 'Orbitron', 'Arial Black', sans-serif;
+  font-family: 'Antonio', 'Arial Black', sans-serif;
   color: #FF9900 !important;
 }
 
@@ -19,10 +16,19 @@ body {
 
 /* Navigation item colors */
 .navMenuOption {
-  background-color: #8DA6FF !important;
-  color: #000 !important;
+  background-color: transparent;
+  color: white !important;
   border-radius: 20px 0 0 20px;
   margin: 5px 0;
+}
+
+.navMenuOption:hover {
+  color: #F90 !important;
+  margin: 5px 0;
+}
+
+.sidebarHeader {
+  font-size: 1.1em;
 }
 
 /* Header bar */
@@ -38,7 +44,7 @@ body {
   margin-bottom: -80px;
   position: relative !important;
   display: inline !important;
-  background-color: #FF9900 !important;
+  background-color: #F90 !important;
   border-radius: 0 0 20px 20px;
   height: 80px !important;
 }
@@ -60,6 +66,12 @@ body {
   color: black !important;
   margin-right: 10px;
   margin-top: 10px;
+}
+
+.syncIndicator,
+.videoIndicator {
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 .cardText {
@@ -90,6 +102,14 @@ body {
   font-weight: bold;
 }
 
+.MuiBox-root:has(.MuiDrawer-paperAnchorLeft) .emby-button {
+  color: white !important;  
+}
+
+.MuiBox-root:has(.MuiDrawer-paperAnchorLeft) .emby-button:hover {
+  color: #F90 !important;  
+}
+
 /* LCARS numeric-style box */
 .headerTabs.sectionTabs {
   background-color: transparent;
@@ -101,12 +121,17 @@ body {
   text-align: center;
 }
 
+#homeTab .sectionTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .emby-tab-button:hover {
   color: #FFA640 !important;
 }
 
 .headerTabs.sectionTabs {
-   font-size: 15px;
+  font-size: 15px;
 }
 
 /* Change Header Logo */
@@ -121,8 +146,24 @@ body {
 }
 
 /* Improved Card Background */
-.defaultCardBackground5 {
-  background-color: #1b1b1b;
+.activeDevices .defaultCardBackground5 {
+  background-color: #1b1b1b !important;
+}
+
+.defaultCardBackground {
+  background-color: #1b1b1b !important;
+}
+
+.activeDevices .defaultCardBackground4 {
+  background-color: #1b1b1b !important;
+}
+
+.activeDevices .sessionCardButton span {
+  color: black !important;
+}
+
+.activeDevices .sessionUserName {
+  color: black !important;
 }
 
 /* Improved Hover Button */
@@ -137,4 +178,104 @@ body {
   border: 0px solid transparent !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+}
+
+/* Improved Text */
+.button-submit,
+.headerHelpButton,
+#loginPage .raised {
+  color: white !important;
+}
+
+.button-submit:hover,
+.headerHelpButton:hover,
+#loginPage .raised:hover {
+  color: #F90 !important;
+}
+
+/* Improved Settings Page */
+.MuiBox-root:has([data-testid="ArrowBackIcon"]) .MuiAvatar-circular {
+  background-color: transparent !important;
+}
+
+.MuiDrawer-root.MuiDrawer-docked .MuiDrawer-paper {
+  border-right: 0px solid transparent !important;
+}
+
+.MuiButtonBase-root[href="#/"] {
+  height: 48px !important;
+  background-color: #F90 !important;
+  color: black !important;
+}
+
+.MuiButtonBase-root[href="#/"] .MuiTypography-root.MuiTypography-h6.MuiListItemText-primary {
+  color: black !important;
+  font-weight: 800;
+  font-family: Antonio;
+}
+
+.MuiButtonBase-root[href="#/"] .MuiTypography-root.MuiTypography-body2.MuiListItemText-secondary.css-54jp7k {
+  color: black !important;
+  margin-top: -5px;
+  font-family: Antonio;
+  font-weight: 500;
+}
+
+.MuiDrawer-docked .MuiListItemIcon-root img {
+  content: url('https://i.imgur.com/rRFliKO.png');
+}
+
+.MuiListSubheader-root {
+  font-family: Antonio;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #F90;
+}
+
+.MuiBox-root:has([data-testid="ArrowBackIcon"]) header.MuiAppBar-positionFixed {
+  background-color: #F90 !important;
+  color: black !important;
+}
+
+.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft {
+  background-color: transparent !important;
+}
+
+.Mui-selected {
+  background-color: #ffffff14 !important;
+}
+
+#serverActivityPage .content-primary,
+#libraryDisplayPage .content-primary {
+  margin-top: 1em;  
+}
+
+#serverActivityPage .MuiTableContainer-root .MuiTableFooter-root {
+  outline: none !important;
+}
+
+#serverActivityPage .MuiTableContainer-root .MuiTableRow-root,
+#serverActivityPage .MuiTableContainer-root .MuiTableCell-root,
+#serverActivityPage:has(.MuiTableContainer-root) .MuiToggleButtonGroup-grouped,
+#serverActivityPage:has(.MuiTableContainer-root) .MuiBox-root:has(.MuiTablePagination-root) {
+  border: 0px solid transparent !important;
+  box-shadow: none !important;
+}
+
+#serverActivityPage .MuiPaper-root:has(.MuiTableContainer-root) {
+  box-shadow: none !important;
+}
+
+#serverActivityPage .MuiBox-root.css-wsew38,
+#serverActivityPage:has(.MuiTableContainer-root) .MuiBox-root:has(.MuiTablePagination-root) {
+  background-color: #101010 !important;
+  border: 0px solid transparent !important;
+}
+
+#serverActivityPage .MuiTableContainer-root .MuiTableRow-root {
+  background-color: #101010 !important;
+}
+
+.css-fknfom {
+  background-image: none !important;
 }
